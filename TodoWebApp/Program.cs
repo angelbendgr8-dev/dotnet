@@ -1,4 +1,12 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using TodoWebApp.Data;
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("WebApiDatabase") ?? throw new InvalidOperationException("Connection string 'TodoWebAppContextConnection' not found.");
+
+builder.Services.AddDbContext<TodoWebAppContext>(options => options.UseNpgsql(connectionString));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<TodoWebAppContext>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
