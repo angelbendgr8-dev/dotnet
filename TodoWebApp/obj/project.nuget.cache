@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "x4T9/F6+K7xAInmF2dTL4pq9TZPot9PRxTA92KlnhHClCpHWTmCytQvaH470wJUiC2qCteNOO11r6E+Kc5c9vQ==",
+  "dgSpecHash": "SsCgJjunfmcQ0IIZ36nDzJO/KYCQp2Ok9I/eHYyf7yDUcRfyFZrYlYBKSyzdt2Hd6Wok/t7rXfXMkZ8EAk9GsA==",
   "success": true,
   "projectFilePath": "/Users/mac/Documents/myProjects/dotnet/TodoWebApp/TodoWebApp.csproj",
   "expectedPackageFiles": [
